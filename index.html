@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Omah Kopi</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -19,7 +19,15 @@
         <link rel="stylesheet" href="./asset/styles/style.css" />
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <nav
+            class="navbar navbar-expand-lg fixed-top"
+            style="
+                color: white;
+                background-color: black;
+                opacity: 0.7;
+                font-weight: bold;
+            "
+        >
             <button
                 class="navbar-toggler"
                 type="button"
@@ -29,7 +37,9 @@
                 aria-expanded="false"
                 aria-label="Toggle navigation"
             >
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon" style="font-weight: bolder;"
+                    >Menu</span
+                >
             </button>
             <img src="./asset/img/omah_kopi.png" alt="" />
 
@@ -39,13 +49,11 @@
             >
                 <ul class="navbar-nav mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#"
+                        <a class="nav-link disabled" href="#"
                             >Home <span class="sr-only">(current)</span></a
                         >
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">Profile</a>
                     </li>
@@ -62,64 +70,71 @@
             </div>
         </nav>
 
-        <div class="card bg-dark text-white">
-            <img
-                class="card-img h-50"
-                src="./asset/img/koppiii.jpg"
-                alt="Card image"
-            />
-            <div class="card-img-overlay">
-                <h5 class="card-title">Omah Kopi</h5>
-                <p class="card-text">
-                    Authenthic indonesian coffee
+        <div
+            class="jumbotron jumbotron-fluid"
+            style="
+                background-image: url(/asset/img/koppiii.jpg);
+                background-size: cover;
+            "
+        >
+            <div class="container" style="color: white;">
+                <br />
+                <br />
+                <h1 class="display-4">Omah Kopi</h1>
+                <p class="lead">
+                    authenthic indonesian coffee
                     <br />
-                    Traditional and brew
+                    traditional and brew
                 </p>
             </div>
         </div>
 
         <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card" style="width: 18rem;">
-                        <img
-                            class="card-img-top img-thumbnail"
-                            src="./asset/img/kopi.jpeg"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Coffee</h5>
-                            <p class="card-text"></p>
+            <div class="col">
+                <h1 class="offer">What We offer</h1>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card" style="width: 18rem;">
+                            <img
+                                class="card-img-top img-thumbnail"
+                                src="./asset/img/kopi.jpeg"
+                                alt="Card image cap"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Coffee</h5>
+                                <p class="card-text"></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card" style="width: 18rem;">
-                        <img
-                            class="card-img-top img-thumbnail"
-                            src="./asset/img/cakes-and-pastry.png"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title text-center">
-                                Cake and Pastry
-                            </h5>
-                            <p class="card-text"></p>
+                    <div class="col-sm">
+                        <div class="card" style="width: 18rem;">
+                            <img
+                                class="card-img-top"
+                                src="./asset/img/cakes-and-pastry.png"
+                                alt="Card image cap"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Cake and Pastry
+                                </h5>
+                                <p class="card-text"></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card" style="width: 18rem;">
-                        <img
-                            class="card-img-top img-thumbnail"
-                            src="./asset/img/incredible-indonesian-dishes-try-now.jpg"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title text-center">
-                                Indonesian Dishes
-                            </h5>
-                            <p class="card-text"></p>
+                    <div class="col-sm">
+                        <div class="card" style="width: 18rem;">
+                            <img
+                                class="card-img-top img-thumbnail"
+                                src="./asset/img/incredible-indonesian-dishes-try-now.jpg"
+                                alt="Card image cap"
+                                style="width: 286px; height: 286px;"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    Indonesian Dishes
+                                </h5>
+                                <p class="card-text"></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -127,83 +142,136 @@
         </div>
 
         <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card" style="width: 18rem;">
-                        <img
-                            class="card-img-top"
-                            src="./asset/img/product1.jpg"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Robusta Telemung</h5>
-                            <p class="card-text">
-                                Biji Kopi Sangrai Robusta Telemung Level : Grade
-                                A ( Kualitas Ekspor ) Process : Honey Process
-                                Ketinggian : 200-800 mdpl Profil Roasting :
-                                Medium.erat Isi : 250gr
-                            </p>
-                            <a href="#" class="btn btn-primary">Buy</a>
+            <h1 class="offer">Our Shop</h1>
+            <div class="col">
+                <div class="row">
+                    <div class="col-sm h-100">
+                        <div class="card" style="width: 18rem;">
+                            <img
+                                class="card-img-top"
+                                src="./asset/img/product1.jpg"
+                                alt="Card image cap"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Robusta Telemung</h5>
+                                <p class="card-text">
+                                    Biji Kopi Sangrai Robusta Telemung Process :
+                                    Honey Process Ketinggian : 200-800 mdpl
+                                    Profil Roasting : Medium.erat Isi : 250gr
+                                </p>
+                                <a href="#" class="btn btn-primary">Buy</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card" style="width: 18rem;">
-                        <img
-                            class="card-img-top"
-                            src="./asset/img/product2.jpg"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Kopi Lanang Arabika Ijen</h5>
-                            <p class="card-text">
-                                Roasted Bean Lanang Arabica Java Ijen Ketinggian
-                                1200 Mdpl Process : Fullwash Profil Roasting :
-                                Medium Roast Berat Isi : 250gr
-                            </p>
-                            <a href="#" class="btn btn-primary">Buy</a>
+                    <div class="col-sm">
+                        <div class="card" style="width: 18rem;">
+                            <img
+                                class="card-img-top"
+                                src="./asset/img/product2.jpg"
+                                alt="Card image cap"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Kopi Lanang Arabika Ijen
+                                </h5>
+                                <p class="card-text">
+                                    Roasted Lanang Arabica Java Ijen Ketinggian
+                                    1200 Mdpl Process : Fullwash Profil Roasting
+                                    : Medium Roast Berat Isi : 250gr
+                                </p>
+                                <a href="#" class="btn btn-primary">Buy</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card" style="width: 18rem;">
-                        <img
-                            class="card-img-top"
-                            src="./asset/img/product3.jpg"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Kopi Arabika Banyuwangi</h5>
-                            <p class="card-text">
-                                Roasted Bean Arabica Banyuwangi Ketinggian 1200
-                                Mdpl Process : Fullwash Profil Roasting : Medium
-                                Roast Berat Isi : 250gr
-                            </p>
-                            <a href="#" class="btn btn-primary">Buy</a>
+                    <div class="col-sm">
+                        <div class="card" style="width: 18rem;">
+                            <img
+                                class="card-img-top"
+                                style="height: auto;"
+                                src="./asset/img/product3.jpg"
+                                alt="Card image cap"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Kopi Arabika Banyuwangi
+                                </h5>
+                                <p class="card-text">
+                                    Roasted Bean Arabica Banyuwangi Ketinggian
+                                    1200 Mdpl Process : Fullwash Profil Roasting
+                                    : Medium Roast Berat Isi : 250gr
+                                </p>
+                                <a href="#" class="btn btn-primary">Buy</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-sm">
-                    <div class="card" style="width: 18rem;">
-                        <img
-                            class="card-img-top"
-                            src="./asset/img/product4.jpg"
-                            alt="Card image cap"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Kopi Arabika Java Ijen</h5>
-                            <p class="card-text">
-                                Roasted Bean Arabica Ijen Ketinggian 1200 Mdpl
-                                Process : Fullwash Profil Roasting : Medium
-                                Roast Berat Isi : 250gr
-                            </p>
-                            <a href="#" class="btn btn-primary">Buy</a>
+                    <div class="col-sm">
+                        <div class="card" style="width: 18rem;">
+                            <img
+                                class="card-img-top"
+                                src="./asset/img/product4.jpg"
+                                alt="Card image cap"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Kopi Arabika Java Ijen
+                                </h5>
+                                <p class="card-text">
+                                    Roasted Bean Arabica Ijen Ketinggian 1200
+                                    Mdpl Process : Fullwash Profil Roasting :
+                                    Medium Roast Berat Isi : 250gr
+                                </p>
+                                <a href="#" class="btn btn-primary">Buy</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <section class="footer">
+            <div class="card-group">
+                <div class="card">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Galery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#"
+                                >Hubungi Kami</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-8">
+                                <h5 class="card-title">Find Us</h5>
+                                <div class="card-body">
+                                    <div class="col-md-4">
+                                        <img src="./asset/img/map.jpeg""
+                                        class="card-img" alt="location" />
+                                    </div>
+                                    <p class="card-text">
+                                        Jalan Kemang Raya No.10<br />
+                                        Jaksel- 17343<br />
+                                        Indonesia
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script
